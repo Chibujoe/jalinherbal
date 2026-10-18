@@ -1,1 +1,677 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jalin Herbal Enterprises | Natural Nigerian Wellness</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            light: '#e6f4ea',
+                            DEFAULT: '#16a34a',
+                            dark: '#15803d',
+                            black: '#1a1a1a'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .whatsapp-float {
+            position: fixed;
+            width: 60px;
+            height: 60px;
+            bottom: 40px;
+            right: 40px;
+            background-color: #25d366;
+            color: #FFF;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 30px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+            z-index: 100;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: transform 0.3s ease;
+        }
+        .whatsapp-float:hover {
+            transform: scale(1.1);
+        }
+        
+        /* Base styles for scroll animations */
+        .reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s ease-out;
+        }
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        /* Active Navigation Link Styling */
+        .nav-link.active-link {
+            color: #16a34a !important; /* Brand Green */
+            border-bottom: 2px solid #16a34a;
+        }
+    </style>
+</head>
+<body class="font-sans text-gray-800 bg-white">
 
+    <nav class="bg-brand-black shadow-md fixed w-full z-50 top-0 transition-all duration-300" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20">
+                <div class="flex items-center">
+                    <a href="#home" class="flex items-center gap-2">
+                        <img src="WhatsApp Image 2026-06-20 at 9.48.37 PM.jpeg" alt="Jalin Herbal Enterprises Logo" class="h-16 w-auto object-contain rounded">
+                    </a>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#home" class="nav-link text-white hover:text-brand font-medium transition py-2">Home</a>
+                    <a href="#about" class="nav-link text-white hover:text-brand font-medium transition py-2">About</a>
+                    <a href="#products" class="nav-link text-white hover:text-brand font-medium transition py-2">Products</a>
+                    <a href="#contact" class="bg-brand hover:bg-brand-dark text-white px-5 py-2 rounded-lg font-medium transition shadow-lg hover:shadow-xl transform hover:-translate-y-0.5">Contact Us</a>
+                </div>
+                <div class="flex items-center md:hidden">
+                    <button id="mobile-menu-btn" class="text-white hover:text-brand focus:outline-none transition-transform duration-300">
+                        <i class="fa-solid fa-bars text-2xl" id="menu-icon"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-brand-black border-t border-gray-800 absolute w-full shadow-xl">
+            <a href="#home" class="mobile-link block px-6 py-4 text-white hover:bg-gray-800 hover:text-brand border-b border-gray-800">Home</a>
+            <a href="#about" class="mobile-link block px-6 py-4 text-white hover:bg-gray-800 hover:text-brand border-b border-gray-800">About</a>
+            <a href="#products" class="mobile-link block px-6 py-4 text-white hover:bg-gray-800 hover:text-brand border-b border-gray-800">Products</a>
+            <a href="#contact" class="mobile-link block px-6 py-4 text-brand font-bold hover:bg-gray-800">Contact Us</a>
+        </div>
+    </nav>
+
+    <section id="home" class="pt-28 pb-20 lg:pt-40 lg:pb-28 bg-brand-light section-area">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col-reverse lg:flex-row items-center gap-12">
+            <div class="flex-1 text-center lg:text-left reveal">
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight mb-6">
+                    Nature's Best for Your <span class="text-brand">Total Wellness</span>
+                </h1>
+                <p class="text-lg text-gray-600 mb-8 max-w-2xl mx-auto lg:mx-0">
+                    Wealth and riches become nothing in the absence of good health. Trust our premium herbal solutions, manufactured and marketed to restore vitality and treat everyday ailments safely and naturally.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                    <a href="#about" class="bg-brand hover:bg-brand-dark text-white text-lg px-8 py-3 rounded-lg font-semibold transition shadow-lg transform hover:scale-105">Discover Our Mission</a>
+                    <a href="#contact" class="bg-white border-2 border-brand text-brand hover:bg-brand hover:text-white text-lg px-8 py-3 rounded-lg font-semibold transition transform hover:scale-105">Consult an Expert</a>
+                </div>
+            </div>
+            <div class="flex-1 w-full reveal" style="transition-delay: 0.2s;">
+                <div class="w-full h-80 lg:h-[500px] rounded-2xl shadow-2xl relative overflow-hidden border-4 border-white transform hover:scale-[1.02] transition duration-500">
+                    <img src="572d4adf-2629-434e-9835-f944a5f44027.jpeg" alt="Jalin Herbal Enterprises Main Facility" class="w-full h-full object-cover">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-20 bg-white section-area">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 reveal">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">About Jalin Herbal Enterprises</h2>
+                <div class="w-24 h-1 bg-brand mx-auto"></div>
+            </div>
+
+            <div class="flex flex-col lg:flex-row items-center gap-12 mb-16">
+                <div class="flex-1 w-full reveal">
+                    <div class="rounded-2xl overflow-hidden shadow-xl transform hover:scale-[1.02] transition duration-500">
+                        <img src="572d4adf-2629-434e-9835-f944a5f44027.jpeg" alt="Jalin Herbal Enterprises Office" class="w-full h-full object-cover">
+                    </div>
+                </div>
+                
+                <div class="flex-1 reveal" style="transition-delay: 0.2s;">
+                    <p class="text-gray-700 text-lg leading-relaxed mb-6 text-justify">
+                        At Jalin Herbal Enterprises, we operate on a fundamental and uncompromising philosophy: <span class="font-bold italic text-gray-900">"Wealth and riches become nothing in the absence of good health."</span> Established as a premier indigenous wellness company, we are dedicated to the comprehensive manufacturing and marketing of high-quality herbal products. By synergizing deeply rooted botanical wisdom with standardized production practices, we provide potent, natural remedies. Our mission is to bridge the gap between nature and modern wellness, ensuring that every product we deliver effectively and safely addresses the everyday health challenges faced by our community.
+                    </p>
+                    <p class="text-gray-700 text-lg leading-relaxed text-justify">
+                        Operating from our established facility, we are equipped to tackle a wide range of ailments through dedicated, holistic care. We specialize in the formulation of Products for  the treatment of persistent conditions such as general infertility cases, malaria, typhoid, gonorrhea, staphylococcus, ulcers, fibroids, diabetes etc. Furthermore, we take pride in our rigorous approach to patient well-being by offering expert health counseling alongside our herbal solutions. Our unwavering commitment to excellence ensures that we do not just treat symptoms, but actively contribute to the sustained vitality, longevity, and total health of our clients.
+                    </p>
+
+                    <p class="text-gray-700 text-lg leading-relaxed text-justify"> <br>
+                        We operate a NAFDAC-standard manufacturing facility dedicated to producing our own products while also providing contract manufacturing services for other companies and brands. Our facility is equipped to support businesses seeking reliable, quality-driven production solutions from formulation to finished products.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10 mt-12">
+                <div class="p-8 rounded-xl bg-gray-50 border border-gray-100 hover:shadow-xl transition duration-300 text-center transform hover:-translate-y-2 reveal">
+                    <div class="w-16 h-16 bg-brand-light rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fa-solid fa-leaf text-brand text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Authentic Formulation</h3>
+                    <p class="text-gray-600">Manufactured using carefully sourced indigenous roots and herbs designed for maximum therapeutic potency.</p>
+                </div>
+                <div class="p-8 rounded-xl bg-gray-50 border border-gray-100 hover:shadow-xl transition duration-300 text-center transform hover:-translate-y-2 reveal" style="transition-delay: 0.1s;">
+                    <div class="w-16 h-16 bg-brand-light rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fa-solid fa-user-doctor text-brand text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Health Counseling/Diagnosis</h3>
+                    <p class="text-gray-600">We provide expert guidance and professional advice to help you achieve holistic lifestyle transformations.</p>
+                </div>
+                <div class="p-8 rounded-xl bg-gray-50 border border-gray-100 hover:shadow-xl transition duration-300 text-center transform hover:-translate-y-2 reveal" style="transition-delay: 0.2s;">
+                    <div class="w-16 h-16 bg-brand-light rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fa-solid fa-shield-halved text-brand text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Comprehensive Treatment</h3>
+                    <p class="text-gray-600">Targeted remedies for complex ailments including erectile dysfunction, Fibroid, Diabetes, Typhoid, and Ulcers.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="products" class="py-20 bg-gray-50 section-area">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 reveal">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">Our Medicinal Formulations</h2>
+                <div class="w-20 h-1 bg-brand mx-auto mb-4"></div>
+                <p class="text-gray-600 max-w-2xl mx-auto">Our specialized herbal products are formulated to treat specific ailments effectively.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-2xl transition duration-300 p-8 text-center border-t-4 border-brand transform hover:-translate-y-2 reveal">
+                    <i class="fa-solid fa-capsules text-5xl text-brand mb-4 transform transition duration-500 hover:rotate-12 hover:scale-110"></i>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Infection Treatments</h3>
+                    <p class="text-gray-600 text-sm">Targeted herbal formulations for Malaria, Typhoid, Gonorrhea, and Staphylococcus.</p>
+                </div>
+                <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-2xl transition duration-300 p-8 text-center border-t-4 border-brand transform hover:-translate-y-2 reveal" style="transition-delay: 0.1s;">
+                    <i class="fa-solid fa-heart-pulse text-5xl text-brand mb-4 transform transition duration-500 hover:rotate-12 hover:scale-110"></i>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Chronic Care</h3>
+                    <p class="text-gray-600 text-sm">Carefully manufactured remedies for the management of Ulcers, Diabetes, etc.</p>
+                </div>
+                <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-2xl transition duration-300 p-8 text-center border-t-4 border-brand transform hover:-translate-y-2 reveal" style="transition-delay: 0.2s;">
+                    <i class="fa-solid fa-person-pregnant text-5xl text-brand mb-4 transform transition duration-500 hover:rotate-12 hover:scale-110"></i>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Women's Health</h3>
+                    <p class="text-gray-600 text-sm">Specialized botanical treatments focusing on the shrinking and management of Fibroids.</p>
+                </div>
+                <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-2xl transition duration-300 p-8 text-center border-t-4 border-brand transform hover:-translate-y-2 reveal" style="transition-delay: 0.2s;">
+                    <i class="fa-solid fa-person-image text-5xl text-brand mb-4 transform transition duration-500 hover:rotate-12 hover:scale-110"></i>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Sexual Enhancement</h3>
+                    <p class="text-gray-600 text-sm">Specialized botanical treatments focusing on the enhancing sexual performance  and general infertility cases in both Men and Women.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRODUCT SHOWCASE GALLERY CONTAINER -->
+    <section id="products" class="py-20 bg-gray-50 section-area">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 reveal">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Our Herbal Products & Remedies</h2>
+                <div class="w-24 h-1 bg-brand mx-auto mb-4"></div>
+                <p class="text-gray-600 max-w-2xl mx-auto">Explore our range of manufactured herbal products. Click any item to directly contact our specialists via WhatsApp for pricing, inquiries, or orders.</p>
+            </div>
+
+            <!-- Product Image Grid -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Product 1 -->
+                <div class="bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-2xl transition duration-300 flex flex-col justify-between border border-gray-100 transform hover:-translate-y-2 reveal">
+                    <div>
+                        <div class="h-64 w-full overflow-hidden bg-gray-100 relative group">
+                            <!-- Image 1 placeholder -->
+                            <img src="IMG-20260905-WA0026.jpg" alt="Jalin Infection Care Formula" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'w-full h-full flex flex-col items-center justify-center bg-green-50 text-brand p-4 text-center\'><i class=\'fa-solid fa-bottle-droplet text-5xl mb-2\'></i><span class=\'font-semibold text-sm\'>[Add product1.jpg]</span></div>';">
+                            <span class="absolute top-3 right-3 bg-brand text-white text-xs font-bold px-3 py-1 rounded-full shadow">Original Blend</span>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-gray-900 mb-2">Infection Clearance Formula</h3>
+                            <p class="text-gray-600 text-sm mb-4">Specially manufactured to handle the treatment of erectile dysfunction in men staphylococcus, gonorrhea, and other infertility cases.</p>
+                        </div>
+                    </div>
+                    <div class="px-6 pb-6 pt-2 border-t border-gray-50">
+                        <a href="https://wa.me/2349096204160?text=Hello%20Jalin%20Herbal%20Enterprises,%20I%20am%20interested%20in%20inquiring%20about%20the%20Infection%20Clearance%20Formula." target="_blank" class="w-full bg-brand hover:bg-brand-dark text-white font-semibold py-3 px-4 rounded-xl transition duration-300 flex items-center justify-center gap-2 shadow-md">
+                            <i class="fa-brands fa-whatsapp text-xl"></i>
+                            <span>Inquire / Order Product</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-2xl transition duration-300 flex flex-col justify-between border border-gray-100 transform hover:-translate-y-2 reveal" style="transition-delay: 0.1s;">
+                    <div>
+                        <div class="h-64 w-full overflow-hidden bg-gray-100 relative group">
+                            <!-- Image 2 placeholder -->
+                            <img src="IMG-20260905-WA0029.jpg" alt="Jalin Ulcer & Digestive Solution" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'w-full h-full flex flex-col items-center justify-center bg-green-50 text-brand p-4 text-center\'><i class=\'fa-solid fa-mortar-pestle text-5xl mb-2\'></i><span class=\'font-semibold text-sm\'>[Add product2.jpg]</span></div>';">
+                            <span class="absolute top-3 right-3 bg-brand text-white text-xs font-bold px-3 py-1 rounded-full shadow">Digestive Health</span>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-gray-900 mb-2">Weight Loss & Cholesterol level</h3>
+                            <p class="text-gray-600 text-sm mb-4">Natural soothing herbal formulation designed to reduce cholesterol level and execessive fat.</p>
+                        </div>
+                    </div>
+                    <div class="px-6 pb-6 pt-2 border-t border-gray-50">
+                        <a href="https://wa.me/2349096204160?text=Hello%20Jalin%20Herbal%20Enterprises,%20I%20am%20interested%20in%20inquiring%20about%20the%20Ulcer%20%26%20Gastric%20Remedy." target="_blank" class="w-full bg-brand hover:bg-brand-dark text-white font-semibold py-3 px-4 rounded-xl transition duration-300 flex items-center justify-center gap-2 shadow-md">
+                            <i class="fa-brands fa-whatsapp text-xl"></i>
+                            <span>Inquire / Order Product</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-2xl transition duration-300 flex flex-col justify-between border border-gray-100 transform hover:-translate-y-2 reveal" style="transition-delay: 0.2s;">
+                    <div>
+                        <div class="h-64 w-full overflow-hidden bg-gray-100 relative group">
+                            <!-- Image 3 placeholder -->
+                            <img src="IMG-20260905-WA0031.jpg" alt="Jalin Fibroid Care Blend" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'w-full h-full flex flex-col items-center justify-center bg-green-50 text-brand p-4 text-center\'><i class=\'fa-solid fa-person-pregnant text-5xl mb-2\'></i><span class=\'font-semibold text-sm\'>[Add product3.jpg]</span></div>';">
+                            <span class="absolute top-3 right-3 bg-brand text-white text-xs font-bold px-3 py-1 rounded-full shadow">Women's Health</span>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-gray-900 mb-2">Fibroid Management Blend</h3>
+                            <p class="text-gray-600 text-sm mb-4">Formulated using roots and herbs aimed at shrinking fibroids naturally and restoring hormonal balance.</p>
+                        </div>
+                    </div>
+                    <div class="px-6 pb-6 pt-2 border-t border-gray-50">
+                        <a href="https://wa.me/2349096204160?text=Hello%20Jalin%20Herbal%20Enterprises,%20I%20am%20interested%20in%20inquiring%20about%20the%20Fibroid%20Management%20Blend." target="_blank" class="w-full bg-brand hover:bg-brand-dark text-white font-semibold py-3 px-4 rounded-xl transition duration-300 flex items-center justify-center gap-2 shadow-md">
+                            <i class="fa-brands fa-whatsapp text-xl"></i>
+                            <span>Inquire / Order Product</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Product 4 -->
+                <div class="bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-2xl transition duration-300 flex flex-col justify-between border border-gray-100 transform hover:-translate-y-2 reveal">
+                    <div>
+                        <div class="h-64 w-full overflow-hidden bg-gray-100 relative group">
+                            <!-- Image 4 placeholder -->
+                            <img src="WhatsApp Image 2026-10-01 at 2.51.31 PM.jpeg" alt="Jalin Diabetes & Blood Sugar Care" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'w-full h-full flex flex-col items-center justify-center bg-green-50 text-brand p-4 text-center\'><i class=\'fa-solid fa-capsules text-5xl mb-2\'></i><span class=\'font-semibold text-sm\'>[Add product4.jpg]</span></div>';">
+                            <span class="absolute top-3 right-3 bg-brand text-white text-xs font-bold px-3 py-1 rounded-full shadow">Glucose Control</span>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-gray-900 mb-2">Diabetes Support Solution</h3>
+                            <p class="text-gray-600 text-sm mb-4">Botanical extracts aimed at stabilizing glucose levels, stimulating insulin response, and aiding energy.</p>
+                        </div>
+                    </div>
+                    <div class="px-6 pb-6 pt-2 border-t border-gray-50">
+                        <a href="https://wa.me/2349096204160?text=Hello%20Jalin%20Herbal%20Enterprises,%20I%20am%20interested%20in%20inquiring%20about%20the%20Diabetes%20Support%20Solution." target="_blank" class="w-full bg-brand hover:bg-brand-dark text-white font-semibold py-3 px-4 rounded-xl transition duration-300 flex items-center justify-center gap-2 shadow-md">
+                            <i class="fa-brands fa-whatsapp text-xl"></i>
+                            <span>Inquire / Order Product</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Product 5 -->
+                <div class="bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-2xl transition duration-300 flex flex-col justify-between border border-gray-100 transform hover:-translate-y-2 reveal" style="transition-delay: 0.1s;">
+                    <div>
+                        <div class="h-64 w-full overflow-hidden bg-gray-100 relative group">
+                            <!-- Image 5 placeholder -->
+                            <img src="Pastedimage.jpg" alt="Jalin Asthma & Respiratory Health" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'w-full h-full flex flex-col items-center justify-center bg-green-50 text-brand p-4 text-center\'><i class=\'fa-solid fa-lungs text-5xl mb-2\'></i><span class=\'font-semibold text-sm\'>[Add product5.jpg]</span></div>';">
+                            <span class="absolute top-3 right-3 bg-brand text-white text-xs font-bold px-3 py-1 rounded-full shadow">Female Well-being</span>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-gray-900 mb-2">Female Wellness Solution</h3>
+                            <p class="text-gray-600 text-sm mb-4">Herbal formulation for female health.</p>
+                        </div>
+                    </div>
+                    <div class="px-6 pb-6 pt-2 border-t border-gray-50">
+                        <a href="https://wa.me/2349096204160?text=Hello%20Jalin%20Herbal%20Enterprises,%20I%20am%20interested%20in%20inquiring%20about%20the%20Asthma%20Relief%20Formula." target="_blank" class="w-full bg-brand hover:bg-brand-dark text-white font-semibold py-3 px-4 rounded-xl transition duration-300 flex items-center justify-center gap-2 shadow-md">
+                            <i class="fa-brands fa-whatsapp text-xl"></i>
+                            <span>Inquire / Order Product</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Product 6 -->
+                <div class="bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-2xl transition duration-300 flex flex-col justify-between border border-gray-100 transform hover:-translate-y-2 reveal" style="transition-delay: 0.2s;">
+                    <div>
+                        <div class="h-64 w-full overflow-hidden bg-gray-100 relative group">
+                            <!-- Image 6 placeholder -->
+                            <img src="WhatsApp Image 2026-10-01 at 3.01.42 PM.jpeg" alt="Jalin General Vitality Tonic" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'w-full h-full flex flex-col items-center justify-center bg-green-50 text-brand p-4 text-center\'><i class=\'fa-solid fa-leaf text-5xl mb-2\'></i><span class=\'font-semibold text-sm\'>[Add product6.jpg]</span></div>';">
+                            <span class="absolute top-3 right-3 bg-brand text-white text-xs font-bold px-3 py-1 rounded-full shadow">Healthy Teeth</span>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-gray-900 mb-2">Tooth Solution</h3>
+                            <p class="text-gray-600 text-sm mb-4">Comprehensive herbal wash and treatment of all forms teeth infections.</p>
+                        </div>
+                    </div>
+                    <div class="px-6 pb-6 pt-2 border-t border-gray-50">
+                        <a href="https://wa.me/2349096204160?text=Hello%20Jalin%20Herbal%20Enterprises,%20I%20am%20interested%20in%20inquiring%20about%20the%20Total%20Vitality%20%26%20Cleansing%20Tonic." target="_blank" class="w-full bg-brand hover:bg-brand-dark text-white font-semibold py-3 px-4 rounded-xl transition duration-300 flex items-center justify-center gap-2 shadow-md">
+                            <i class="fa-brands fa-whatsapp text-xl"></i>
+                            <span>Inquire / Order Product</span>
+                        </a>
+                    </div>
+                </div>
+
+                 <!-- Product 7 -->
+                 <div class="bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-2xl transition duration-300 flex flex-col justify-between border border-gray-100 transform hover:-translate-y-2 reveal" style="transition-delay: 0.2s;">
+                    <div>
+                        <div class="h-64 w-full overflow-hidden bg-gray-100 relative group">
+                            <!-- Image 7 placeholder -->
+                            <img src="WhatsApp Image 2026-10-01 at 3.22.22 PM.jpeg" alt="Jalin General Vitality Tonic" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'w-full h-full flex flex-col items-center justify-center bg-green-50 text-brand p-4 text-center\'><i class=\'fa-solid fa-leaf text-5xl mb-2\'></i><span class=\'font-semibold text-sm\'>[Add product6.jpg]</span></div>';">
+                            <span class="absolute top-3 right-3 bg-brand text-white text-xs font-bold px-3 py-1 rounded-full shadow">bones and Joints</span>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-gray-900 mb-2">Pain and Inflammation Relief</h3>
+                            <p class="text-gray-600 text-sm mb-4">Specially formulated to relieve cold, pain, catarrh, stroke and inflammation.</p>
+                        </div>
+                    </div>
+                    <div class="px-6 pb-6 pt-2 border-t border-gray-50">
+                        <a href="https://wa.me/2349096204160?text=Hello%20Jalin%20Herbal%20Enterprises,%20I%20am%20interested%20in%20inquiring%20about%20the%20Total%20Vitality%20%26%20Cleansing%20Tonic." target="_blank" class="w-full bg-brand hover:bg-brand-dark text-white font-semibold py-3 px-4 rounded-xl transition duration-300 flex items-center justify-center gap-2 shadow-md">
+                            <i class="fa-brands fa-whatsapp text-xl"></i>
+                            <span>Inquire / Order Product</span>
+                        </a>
+                    </div>
+                </div>
+
+                 <!-- Product 8 -->
+                 <div class="bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-2xl transition duration-300 flex flex-col justify-between border border-gray-100 transform hover:-translate-y-2 reveal" style="transition-delay: 0.2s;">
+                    <div>
+                        <div class="h-64 w-full overflow-hidden bg-gray-100 relative group">
+                            <!-- Image 8placeholder -->
+                            <img src="WhatsApp Image 2026-10-01 at 3.30.09 PM.jpeg" alt="Jalin General Vitality Tonic" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'w-full h-full flex flex-col items-center justify-center bg-green-50 text-brand p-4 text-center\'><i class=\'fa-solid fa-leaf text-5xl mb-2\'></i><span class=\'font-semibold text-sm\'>[Add product6.jpg]</span></div>';">
+                            <span class="absolute top-3 right-3 bg-brand text-white text-xs font-bold px-3 py-1 rounded-full shadow">Cream</span>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-gray-900 mb-2">Rashes and Dandruff</h3>
+                            <p class="text-gray-600 text-sm mb-4">formulated product for the treatment of rashes, ringworm, eczema, dandruff and aftershave.</p>
+                        </div>
+                    </div>
+                    <div class="px-6 pb-6 pt-2 border-t border-gray-50">
+                        <a href="https://wa.me/2349096204160?text=Hello%20Jalin%20Herbal%20Enterprises,%20I%20am%20interested%20in%20inquiring%20about%20the%20Total%20Vitality%20%26%20Cleansing%20Tonic." target="_blank" class="w-full bg-brand hover:bg-brand-dark text-white font-semibold py-3 px-4 rounded-xl transition duration-300 flex items-center justify-center gap-2 shadow-md">
+                            <i class="fa-brands fa-whatsapp text-xl"></i>
+                            <span>Inquire / Order Product</span>
+                        </a>
+                    </div>
+                </div>
+
+                 <!-- Product 9 -->
+                 <div class="bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-2xl transition duration-300 flex flex-col justify-between border border-gray-100 transform hover:-translate-y-2 reveal" style="transition-delay: 0.2s;">
+                    <div>
+                        <div class="h-64 w-full overflow-hidden bg-gray-100 relative group">
+                            <!-- Image 9 placeholder -->
+                            <img src="WhatsApp Image 2026-10-01 at 3.34.04 PM.jpeg" alt="Jalin General Vitality Tonic" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'w-full h-full flex flex-col items-center justify-center bg-green-50 text-brand p-4 text-center\'><i class=\'fa-solid fa-leaf text-5xl mb-2\'></i><span class=\'font-semibold text-sm\'>[Add product6.jpg]</span></div>';">
+                            <span class="absolute top-3 right-3 bg-brand text-white text-xs font-bold px-3 py-1 rounded-full shadow">Urinary tract/span>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-gray-900 mb-2">Infection Powdered Solution</h3>
+                            <p class="text-gray-600 text-sm mb-4">For the treatment of all furinary tract infections.</p>
+                        </div>
+                    </div>
+                    <div class="px-6 pb-6 pt-2 border-t border-gray-50">
+                        <a href="https://wa.me/2349096204160?text=Hello%20Jalin%20Herbal%20Enterprises,%20I%20am%20interested%20in%20inquiring%20about%20the%20Total%20Vitality%20%26%20Cleansing%20Tonic." target="_blank" class="w-full bg-brand hover:bg-brand-dark text-white font-semibold py-3 px-4 rounded-xl transition duration-300 flex items-center justify-center gap-2 shadow-md">
+                            <i class="fa-brands fa-whatsapp text-xl"></i>
+                            <span>Inquire / Order Product</span>
+                        </a>
+                    </div>
+                </div>
+
+                 <!-- Product 10 -->
+                 <div class="bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-2xl transition duration-300 flex flex-col justify-between border border-gray-100 transform hover:-translate-y-2 reveal" style="transition-delay: 0.2s;">
+                    <div>
+                        <div class="h-64 w-full overflow-hidden bg-gray-100 relative group">
+                            <!-- Image 10 placeholder -->
+                            <img src="WhatsApp Image 2026-10-01 at 3.39.27 PM.jpeg" alt="Jalin General Vitality Tonic" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'w-full h-full flex flex-col items-center justify-center bg-green-50 text-brand p-4 text-center\'><i class=\'fa-solid fa-leaf text-5xl mb-2\'></i><span class=\'font-semibold text-sm\'>[Add product6.jpg]</span></div>';">
+                            <span class="absolute top-3 right-3 bg-brand text-white text-xs font-bold px-3 py-1 rounded-full shadow">Healthy Teeth</span>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-gray-900 mb-2">Herbal Tooth Powder</h3>
+                            <p class="text-gray-600 text-sm mb-4">Comprehensive herbal product for whiter and stronger teeth and healthy bones.</p>
+                        </div>
+                    </div>
+                    <div class="px-6 pb-6 pt-2 border-t border-gray-50">
+                        <a href="https://wa.me/2349096204160?text=Hello%20Jalin%20Herbal%20Enterprises,%20I%20am%20interested%20in%20inquiring%20about%20the%20Total%20Vitality%20%26%20Cleansing%20Tonic." target="_blank" class="w-full bg-brand hover:bg-brand-dark text-white font-semibold py-3 px-4 rounded-xl transition duration-300 flex items-center justify-center gap-2 shadow-md">
+                            <i class="fa-brands fa-whatsapp text-xl"></i>
+                            <span>Inquire / Order Product</span>
+                        </a>
+                    </div>
+                </div>
+
+                 <!-- Product 11 -->
+                 <div class="bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-2xl transition duration-300 flex flex-col justify-between border border-gray-100 transform hover:-translate-y-2 reveal" style="transition-delay: 0.2s;">
+                    <div>
+                        <div class="h-64 w-full overflow-hidden bg-gray-100 relative group">
+                            <!-- Image 11 placeholder -->
+                            <img src="WhatsApp Image 2026-10-01 at 3.44.06 PM.jpeg" alt="Jalin General Vitality Tonic" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'w-full h-full flex flex-col items-center justify-center bg-green-50 text-brand p-4 text-center\'><i class=\'fa-solid fa-leaf text-5xl mb-2\'></i><span class=\'font-semibold text-sm\'>[Add product6.jpg]</span></div>';">
+                            <span class="absolute top-3 right-3 bg-brand text-white text-xs font-bold px-3 py-1 rounded-full shadow">Healthy Teeth</span>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-gray-900 mb-2">Herbal Powdered Tea</h3>
+                            <p class="text-gray-600 text-sm mb-4">Comprehensive herbal product for general body cleansing, infections and reduction of sugar level.</p>
+                        </div>
+                    </div>
+                    <div class="px-6 pb-6 pt-2 border-t border-gray-50">
+                        <a href="https://wa.me/2349096204160?text=Hello%20Jalin%20Herbal%20Enterprises,%20I%20am%20interested%20in%20inquiring%20about%20the%20Total%20Vitality%20%26%20Cleansing%20Tonic." target="_blank" class="w-full bg-brand hover:bg-brand-dark text-white font-semibold py-3 px-4 rounded-xl transition duration-300 flex items-center justify-center gap-2 shadow-md">
+                            <i class="fa-brands fa-whatsapp text-xl"></i>
+                            <span>Inquire / Order Product</span>
+                        </a>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-20 bg-brand-light section-area">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-white rounded-2xl shadow-xl overflow-hidden reveal">
+                <div class="grid grid-cols-1 lg:grid-cols-2">
+                    <div class="bg-brand-black p-10 lg:p-16 text-white flex flex-col justify-center">
+                        <h2 class="text-3xl font-bold mb-4">Visit Our Office</h2>
+                        <p class="text-gray-300 mb-10">We are open for consultations, health counseling, and product purchases.</p>
+                        
+                        <div class="space-y-6">
+                            <div class="flex items-start gap-4 hover:translate-x-2 transition transform duration-300">
+                                <i class="fa-solid fa-location-dot text-xl mt-1 text-brand"></i>
+                                <div>
+                                    <h4 class="font-bold text-lg">Head Office</h4>
+                                    <p class="text-gray-300">24 Umule Road, Aba,<br>Abia State, Nigeria</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-4 hover:translate-x-2 transition transform duration-300">
+                                <i class="fa-solid fa-phone text-xl mt-1 text-brand"></i>
+                                <div>
+                                    <h4 class="font-bold text-lg">Direct Line</h4>
+                                    <p class="text-gray-300">09096204160</p>
+                                    <p class="text-gray-300">08165970207</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-4 hover:translate-x-2 transition transform duration-300">
+                                <i class="fa-solid fa-envelope text-xl mt-1 text-brand"></i>
+                                <div>
+                                    <h4 class="font-bold text-lg">Email</h4>
+                                    <p class="text-gray-300">jalinherbal.enterprises@gmail.com</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="p-10 lg:p-16">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-6">Send Us a Message</h3>
+                        
+                        <div id="form-success" class="hidden bg-green-100 border border-brand text-brand-dark px-4 py-3 rounded mb-6 transition duration-500">
+                            <i class="fa-solid fa-circle-check mr-2"></i> Your inquiry has been sent successfully. We will contact you soon.
+                        </div>
+
+                        <form id="contact-form" action="#" method="POST" class="space-y-6">
+                            <div>
+                                <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Full Name *</label>
+                                <input type="text" id="name" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-brand focus:border-brand outline-none transition" placeholder="Your Name">
+                            </div>
+                            <div>
+                                <label for="phone" class="block text-sm font-medium text-gray-700 mb-1">Phone Number *</label>
+                                <input type="tel" id="phone" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-brand focus:border-brand outline-none transition" placeholder="Your Phone Number">
+                            </div>
+                            <div>
+                                <label for="message" class="block text-sm font-medium text-gray-700 mb-1">Health Inquiry *</label>
+                                <textarea id="message" required rows="4" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-brand focus:border-brand outline-none transition" placeholder="Please describe the health issue or product you are inquiring about..."></textarea>
+                            </div>
+                            <button type="submit" id="submit-btn" class="w-full bg-brand hover:bg-brand-dark text-white font-bold py-3 rounded-lg transition shadow-md text-lg flex justify-center items-center gap-2">
+                                <span>Request Consultation</span>
+                                <i class="fa-solid fa-paper-plane hidden" id="loading-spinner"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-900 text-gray-300 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-2xl font-bold text-white mb-4">Jalin Herbal Enterprises</h2>
+            <p class="text-gray-400 mb-2">Manufacturers & Marketers of Jalin Herbal Products</p>
+            <p class="text-gray-500 text-sm mb-8">"Wealth and Riches become nothing in the absence of good health"</p>
+            <div class="border-t border-gray-800 pt-8 text-sm text-gray-500">
+                <p>&copy; <span id="current-year"></span> Jalin Herbal Enterprises. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/2349096204160?text=Hello%20Jalin%20Herbal%20Enterprises,%20I%20would%20like%20to%20consult%20about%20my%20health." class="whatsapp-float hover:scale-110 transition duration-300" target="_blank" aria-label="Chat with us on WhatsApp">
+        <i class="fa-brands fa-whatsapp animate-pulse"></i>
+    </a>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            
+            // --- 1. Dynamic Copyright Year ---
+            // This automatically fetches the current calendar year and inserts it into the footer.
+            // You will never have to manually update the year on January 1st again.
+            const yearSpan = document.getElementById('current-year');
+            if (yearSpan) {
+                yearSpan.textContent = new Date().getFullYear();
+            }
+
+            // --- 2. Enhanced Mobile Menu Toggle ---
+            // This script handles the opening and closing of the mobile menu.
+            // It also changes the hamburger icon to an 'X' when open for better user feedback.
+            const btn = document.getElementById('mobile-menu-btn');
+            const menu = document.getElementById('mobile-menu');
+            const menuIcon = document.getElementById('menu-icon');
+
+            if (btn && menu && menuIcon) {
+                btn.addEventListener('click', () => {
+                    menu.classList.toggle('hidden');
+                    // Toggle icon between bars and X mark
+                    if (menu.classList.contains('hidden')) {
+                        menuIcon.classList.remove('fa-xmark');
+                        menuIcon.classList.add('fa-bars');
+                    } else {
+                        menuIcon.classList.remove('fa-bars');
+                        menuIcon.classList.add('fa-xmark');
+                    }
+                });
+
+                // Automatically close the mobile menu when a link inside it is clicked
+                const mobileLinks = menu.querySelectorAll('.mobile-link');
+                mobileLinks.forEach(link => {
+                    link.addEventListener('click', () => {
+                        menu.classList.add('hidden');
+                        menuIcon.classList.remove('fa-xmark');
+                        menuIcon.classList.add('fa-bars');
+                    });
+                });
+            }
+
+            // --- 3. Scroll Reveal Animations ---
+            // This uses the Intersection Observer API. It watches elements on the screen.
+            // When an element with the class 'reveal' enters the viewport, it adds the 'active' class,
+            // triggering a smooth CSS fade-in and slide-up animation.
+            const revealElements = document.querySelectorAll('.reveal');
+            
+            const revealOptions = {
+                threshold: 0.15, // Triggers when 15% of the element is visible
+                rootMargin: "0px 0px -50px 0px" // Triggers slightly before it hits the bottom
+            };
+
+            const revealOnScroll = new IntersectionObserver(function(entries, observer) {
+                entries.forEach(entry => {
+                    if (!entry.isIntersecting) {
+                        return;
+                    } else {
+                        entry.target.classList.add('active');
+                        // Optional: Stop observing once revealed so it doesn't animate every time you scroll up and down
+                        observer.unobserve(entry.target); 
+                    }
+                });
+            }, revealOptions);
+
+            revealElements.forEach(el => {
+                revealOnScroll.observe(el);
+            });
+
+            // --- 4. Interactive Navigation ScrollSpy ---
+            // This script detects which section of the website you are currently looking at
+            // and highlights the corresponding link in the top navigation bar.
+            const sections = document.querySelectorAll('.section-area');
+            const navLinks = document.querySelectorAll('.nav-link');
+
+            window.addEventListener('scroll', () => {
+                let current = '';
+                
+                sections.forEach(section => {
+                    const sectionTop = section.offsetTop;
+                    const sectionHeight = section.clientHeight;
+                    // Check if the current scroll position is within this section
+                    if (scrollY >= (sectionTop - 200)) { 
+                        current = section.getAttribute('id');
+                    }
+                });
+
+                navLinks.forEach(link => {
+                    link.classList.remove('active-link');
+                    if (link.getAttribute('href').includes(current)) {
+                        link.classList.add('active-link');
+                    }
+                });
+            });
+
+            // --- 5. Contact Form Simulation & Validation ---
+            // Since there is no backend server to process emails right now, this intercepts
+            // the form submission, ensures the required fields are filled, simulates a loading
+            // state on the button, and then shows a "Success" message to the user.
+            const contactForm = document.getElementById('contact-form');
+            const successMessage = document.getElementById('form-success');
+            const submitBtn = document.getElementById('submit-btn');
+            const btnText = submitBtn ? submitBtn.querySelector('span') : null;
+            const spinner = document.getElementById('loading-spinner');
+
+            if (contactForm) {
+                contactForm.addEventListener('submit', function(e) {
+                    e.preventDefault(); // Prevents the page from reloading
+                    
+                    // Simulate processing time (e.g., sending to a server)
+                    if(btnText && spinner) {
+                        btnText.textContent = "Sending...";
+                        spinner.classList.remove('hidden');
+                        submitBtn.classList.add('opacity-75', 'cursor-not-allowed');
+                    }
+
+                    setTimeout(() => {
+                        // After 1.5 seconds, show the success message and clear the form
+                        successMessage.classList.remove('hidden');
+                        contactForm.reset();
+                        
+                        // Reset button state
+                        if(btnText && spinner) {
+                            btnText.textContent = "Request Consultation";
+                            spinner.classList.add('hidden');
+                            submitBtn.classList.remove('opacity-75', 'cursor-not-allowed');
+                        }
+
+                        // Hide the success message after 5 seconds
+                        setTimeout(() => {
+                            successMessage.classList.add('hidden');
+                        }, 5000);
+                        
+                    }, 1500); // 1.5 second simulated delay
+                });
+            }
+        });
+    </script>
+</body>
+</html>
