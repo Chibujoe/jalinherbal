@@ -1,0 +1,37 @@
+
+backend:
+  name: github
+  repo: Chibujoe/jalinherbal
+  branch: CMS-Setup
+
+media_folder: "images/uploads"
+public_folder: "/images/uploads"
+
+publish_mode: editorial_workflow
+
+collections:
+  - name: "products"
+    label: "Products"
+    folder: "content/products"
+    create: true
+    slug: "{{slug}}"
+    extension: "json"
+    format: "json"
+    fields:
+      - { label: "Product Name", name: "title", widget: "string" }
+      - { label: "Description", name: "description", widget: "text" }
+      - { label: "Product Image", name: "image", widget: "image", required: false }
+      - { label: "WhatsApp Message", name: "whatsapp_message", widget: "string", required: false }
+      - { label: "Featured Product", name: "featured", widget: "boolean", default: false }
+
+  - name: "company"
+    label: "Company Information"
+    files:
+      - name: "details"
+        label: "Company Details"
+        file: "content/company.json"
+        fields:
+          - { label: "Company Name", name: "name", widget: "string" }
+          - { label: "About Us", name: "about", widget: "text" }
+          - { label: "WhatsApp Number", name: "whatsapp", widget: "string" }
+          - { label: "Contact Email", name: "email", widget: "string", required: false }
