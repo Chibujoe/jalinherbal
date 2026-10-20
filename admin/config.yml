@@ -3,7 +3,7 @@ backend:
   backend:
   name: turbo-github
   turbo_site_id: "130691d0-51e7-4770-b5fc-b5dbbeba8f00"
-  branch: cms-setup
+  branch: CMS-Setup
 
 media_folder: "images/uploads"
 public_folder: "/images/uploads"
