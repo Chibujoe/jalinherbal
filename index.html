@@ -795,5 +795,22 @@ document.addEventListener('DOMContentLoaded', async () => {
     }
 });
 </script>
+   <script>
+document.addEventListener('DOMContentLoaded', async () => {
+    try {
+        const response = await fetch('/content/company.json');
+
+        if (!response.ok) {
+            throw new Error('Could not load company information.');
+        }
+
+        const company = await response.json();
+
+        console.log('CMS company information loaded:', company);
+    } catch (error) {
+        console.error('Company information loading error:', error);
+    }
+});
+</script> 
 </body>
 </html>
