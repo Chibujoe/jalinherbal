@@ -1,7 +1,8 @@
 {
   "featured": false,
-  "published": false,
+  "published": true,
   "title": "CMS Test Product",
   "description": "This is just a test to confirm something",
-  "whatsapp_message": "Test product enquiry"
+  "whatsapp_message": "Test product enquiry",
+  "image": "/images/uploads/whatsapp-image-2026-10-01-at-3.57.52-pm.jpeg"
 }
