@@ -701,7 +701,11 @@ document.addEventListener('DOMContentLoaded', async () => {
         const files = await response.json();
 
         if (!Array.isArray(files)) return;
+const companyResponse = await fetch('/content/company.json');
 
+const company = companyResponse.ok
+    ? await companyResponse.json()
+    : {};
         const products = await Promise.all(
             files
                 .filter(file => file.name.endsWith('.json'))
@@ -769,8 +773,10 @@ document.addEventListener('DOMContentLoaded', async () => {
             const message = product.whatsapp_message ||
                 `Hello Jalin Herbal Enterprises, I am interested in ${product.title}.`;
 
-            link.href = 'https://wa.me/2349096204160?text=' +
-                encodeURIComponent(message);
+            const whatsappNumber = company.whatsapp || '2349096204160';
+
+link.href = 'https://wa.me/' + whatsappNumber + '?text=' +
+    encodeURIComponent(message);
             link.target = '_blank';
             link.rel = 'noopener noreferrer';
             link.className =
