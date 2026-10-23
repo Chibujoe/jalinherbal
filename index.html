@@ -812,7 +812,11 @@ document.addEventListener('DOMContentLoaded', async () => {
 if (companyName && company.name) {
     companyName.textContent = company.name;
 }
+const companyAbout = document.getElementById('company-about');
 
+if (companyAbout && company.about) {
+    companyAbout.textContent = company.about;
+}
 console.log('CMS company information loaded:', company);
     } catch (error) {
         console.error('Company information loading error:', error);
