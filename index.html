@@ -806,7 +806,13 @@ document.addEventListener('DOMContentLoaded', async () => {
 
         const company = await response.json();
 
-        console.log('CMS company information loaded:', company);
+        const companyName = document.getElementById('company-name');
+
+if (companyName && company.name) {
+    companyName.textContent = company.name;
+}
+
+console.log('CMS company information loaded:', company);
     } catch (error) {
         console.error('Company information loading error:', error);
     }
