@@ -823,6 +823,11 @@ const companyAbout = document.getElementById('company-about');
 if (companyAbout && company.about) {
     companyAbout.textContent = company.about;
 }
+        const companyEmail = document.getElementById('company-email');
+
+if (companyEmail && company.email) {
+    companyEmail.textContent = company.email;
+}
 console.log('CMS company information loaded:', company);
     } catch (error) {
         console.error('Company information loading error:', error);
