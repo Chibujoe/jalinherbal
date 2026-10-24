@@ -1,6 +1,6 @@
 {
   "featured": false,
-  "published": true,
+  "published": false,
   "title": "CMS Test Product",
   "description": "Updated description to test CMS editing for product",
   "whatsapp_message": "Test product enquiry",
