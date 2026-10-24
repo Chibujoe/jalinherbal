@@ -520,6 +520,7 @@
                                 <label for="message" class="block text-sm font-medium text-gray-700 mb-1">Health Inquiry *</label>
                                <textarea id="message" name="message" required rows="4" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-brand focus:border-brand outline-none transition" placeholder="Please describe the health issue or product you are inquiring about..."></textarea>
                             </div>
+                            <div class="h-captcha" data-captcha="true"></div>
                             <button type="submit" id="submit-btn" class="w-full bg-brand hover:bg-brand-dark text-white font-bold py-3 rounded-lg transition shadow-md text-lg flex justify-center items-center gap-2">
                                 <span>Request Consultation</span>
                                 <i class="fa-solid fa-paper-plane hidden" id="loading-spinner"></i>
@@ -861,5 +862,6 @@ console.log('CMS company information loaded:', company);
     }
 });
 </script> 
+    <script src="https://web3forms.com/client/script.js" async defer></script>
 </body>
 </html>
